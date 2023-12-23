@@ -1,0 +1,174 @@
+/* ================================================== */
+/*                     Main Style                    
+/* ================================================== */
+body {
+    font-family: 'Lato';
+    font-size: 1.125rem;
+    line-height: 1.6;
+    text-align: center;
+    background-color: #EDF2F4;
+}
+
+main {
+    width: min(65ch, 100% - 4rem);
+    margin-inline: auto;
+}
+
+h1 {
+    color: #EF233C;
+}
+
+h2 {
+    color: #D90429;
+}
+
+h3 {
+    color: #8D99AE;
+}
+
+p {
+    color: #2B2D42;
+}
+
+img,
+picture,
+svg,
+video {
+    max-width: 100%;
+    object-fit: cover;
+    margin-inline: auto;
+}
+
+/* ================================================== */
+/*                   Project Section                  
+/* ================================================== */
+#project-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: auto; /* Centrer horizontalement */
+    max-width: 100%;
+}
+
+#project-gallery figure {
+    max-width: 100%;
+    text-align: center;
+    
+}
+
+#project-gallery img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Maintenir les proportions de l'image */
+}
+/* ================================================== */
+/*                    Skill Section                  
+/* ================================================== */
+
+#section-skills table {
+    border-collapse: collapse;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section-skills th {
+    border: 4px solid #2B2D42;
+    padding: 8px;
+    text-align: center;
+    max-width: 30%;
+} 
+
+#section-skills td {
+    border: 4px solid #2B2D42;   
+}
+
+#section-skills img {
+    max-width: 30%;
+}
+
+
+
+/* ================================================== */
+/*                   Socials Section                 
+/* ================================================== */
+#section-socials {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+li {
+    margin-bottom: 3px;
+}
+/* ================================================== */
+/*                   Contact Section                 
+/* ================================================== */
+#section-contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; /* Ajustez selon vos besoins */
+    margin: auto; /* Centre le formulaire */
+}
+
+#section-contact label {
+    margin-bottom: 8px;
+}
+
+#section-contact button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#section-contact button:hover {
+    background-color: #0056b3;
+}
+/* ================================================== */
+/*                   Responsive                
+/* ================================================== */
+/* Pour les écrans de taille moyenne à large */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1.25rem;
+    }
+
+    main {
+        width: min(80ch, 100% - 4rem);
+    }
+
+    /* Ajoutez d'autres styles pour la mise en page à partir de 768px */
+}
+
+/* Pour les écrans larges (par exemple, tablettes et ordinateurs de bureau) */
+@media screen and (min-width: 1024px) {
+    /* Ajoutez des styles spécifiques pour les écrans plus larges */
+}
+
+
+/* Pour les écrans de taille moyenne à large */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1.25rem;
+    }
+
+    main {
+        width: min(80ch, 100% - 4rem);
+    }
+
+    #project-gallery {
+        grid-template-columns: repeat(4, 1fr); /* Ajustez le nombre de colonnes */
+    }
+
+    /* Ajoutez d'autres styles pour la mise en page à partir de 768px */
+}
+
+/* Pour les écrans larges (par exemple, tablettes et ordinateurs de bureau) */
+@media screen and (min-width: 1024px) {
+    /* Ajoutez des styles spécifiques pour les écrans plus larges */
+}
