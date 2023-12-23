@@ -1,47 +1,117 @@
-/* ================================================== */
-/*                     Main Style                    
-/* ================================================== */
+/* ==================== Main Style ==================== */
 body {
     font-family: 'Lato';
     font-size: 1.125rem;
     line-height: 1.6;
     text-align: center;
     background-color: #EDF2F4;
+    color: #2B2D42;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+}
+
+*, html {
+    scroll-behavior: smooth !important;
+    scroll-padding: 5.4rem;
+    box-sizing: border-box;
 }
 
 main {
-    width: min(65ch, 100% - 4rem);
-    margin-inline: auto;
+    width: min(65ch, calc(100% - 4rem));
+    margin: auto;
 }
 
-h1 {
-    color: #EF233C;
-}
+h1 { color: #EF233C; } 
+h2 { color: #D90429; } 
+h3 { color: #8D99AE; } 
+p  { color: #2B2D42; }
 
-h2 {
-    color: #D90429;
-}
-
-h3 {
-    color: #8D99AE;
-}
-
-p {
-    color: #2B2D42;
-}
-
-img,
-picture,
-svg,
-video {
+img, picture, svg, video {
     max-width: 100%;
+    height: auto;
     object-fit: cover;
-    margin-inline: auto;
+    margin: auto;
+    border-radius: 8px; /* Ajout de coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre légère */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* ================================================== */
-/*                   Project Section                  
-/* ================================================== */
+img:hover, picture:hover, svg:hover, video:hover {
+    transform: scale(1.1); /* Effet de zoom au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Augmentation de l'ombre au survol */
+}
+
+/* ================== Navigation Bar ================== */
+.primary-navigation {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem 0 2rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    background: #D90429;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.primary-navigation:hover {
+    background-color: #BA0C2F;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    list-style: none;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-item a:hover {
+    background-color: #D90429;
+    transform: translateY(-3px);
+}
+/* ================== Welcome Section ================== */
+#section-welcome {
+    display: flex;
+    gap: 8rem;
+    margin-top: 20px; /* Ajoutez une marge supérieure à votre section */
+}
+
+.text-container {
+    flex: 1;
+}
+
+.text-container h1, .text-container h3, .text-container p {
+    text-align: left;
+    line-height: 1.3rem;
+}
+
+.image-container {
+    flex: 1;
+    text-align: right;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* ================== Project Section ================== */
 #project-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -53,65 +123,54 @@ video {
 #project-gallery figure {
     max-width: 100%;
     text-align: center;
-    
 }
+
 
 #project-gallery img {
     max-width: 100%;
     height: auto;
-    object-fit: cover; /* Maintenir les proportions de l'image */
+    object-fit: cover;
+    border-radius: 8px;
 }
-/* ================================================== */
-/*                    Skill Section                  
-/* ================================================== */
-
+/* ================== Skill Section ================== */
 #section-skills table {
     border-collapse: collapse;
     max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
-#section-skills th {
+#section-skills th, #section-skills td {
     border: 4px solid #2B2D42;
     padding: 8px;
     text-align: center;
-    max-width: 30%;
-} 
-
-#section-skills td {
-    border: 4px solid #2B2D42;   
 }
 
 #section-skills img {
     max-width: 30%;
+    border-radius: 8px;
 }
-
-
-
-/* ================================================== */
-/*                   Socials Section                 
-/* ================================================== */
-#section-socials {
-    margin-top: 20px;
-}
-
-ul {
+/* ================== Contact Section ================== */
+#section-contact ul {
     list-style-type: none;
-    padding: 0px;
+    padding: 0;
 }
 
-li {
+#section-contact li {
     margin-bottom: 3px;
 }
-/* ================================================== */
-/*                   Contact Section                 
-/* ================================================== */
+
+#section-contact img {
+    max-width: 25%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 90px;
+}
+
 #section-contact form {
     display: flex;
     flex-direction: column;
-    max-width: 300px; /* Ajustez selon vos besoins */
-    margin: auto; /* Centre le formulaire */
+    max-width: 300px;
+    margin: auto;
 }
 
 #section-contact label {
@@ -123,40 +182,33 @@ li {
     background-color: #007BFF;
     color: #fff;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 #section-contact button:hover {
     background-color: #0056b3;
 }
-/* ================================================== */
-/*                   Responsive                
-/* ================================================== */
-/* Pour les écrans de taille moyenne à large */
-@media screen and (min-width: 768px) {
-    body {
-        font-size: 1.25rem;
-    }
-
-    main {
-        width: min(80ch, 100% - 4rem);
-    }
-
-    /* Ajoutez d'autres styles pour la mise en page à partir de 768px */
+/* ================== Footer ================== */       
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+    font-size: 1rem;
+    color: #FFF;
+    background: #D90429;
+    text-align: center;
 }
-
-/* Pour les écrans larges (par exemple, tablettes et ordinateurs de bureau) */
-@media screen and (min-width: 1024px) {
-    /* Ajoutez des styles spécifiques pour les écrans plus larges */
+/* ================== Responsive ================== */       
+/* Pour tous les écrans, y compris les petits écrans (par défaut) */
+body {
+    font-size: 1.125rem;
 }
-
 
 /* Pour les écrans de taille moyenne à large */
 @media screen and (min-width: 768px) {
-    body {
-        font-size: 1.25rem;
-    }
-
     main {
         width: min(80ch, 100% - 4rem);
     }
@@ -164,11 +216,26 @@ li {
     #project-gallery {
         grid-template-columns: repeat(4, 1fr); /* Ajustez le nombre de colonnes */
     }
-
-    /* Ajoutez d'autres styles pour la mise en page à partir de 768px */
 }
 
 /* Pour les écrans larges (par exemple, tablettes et ordinateurs de bureau) */
 @media screen and (min-width: 1024px) {
-    /* Ajoutez des styles spécifiques pour les écrans plus larges */
+    main {
+        width: min(80ch, 100% - 4rem);
+    }
+
+    #project-gallery {
+        grid-template-columns: repeat(5, 1fr); /* Ajustez le nombre de colonnes */
+    }
+}
+
+/* Pour les écrans très larges (par exemple, grands écrans de bureau) */
+@media screen and (min-width: 1200px) {
+    main {
+        width: min(80ch, 100% - 4rem);
+    }
+
+    #project-gallery {
+        grid-template-columns: repeat(6, 1fr); /* Ajustez le nombre de colonnes */
+    }
 }
