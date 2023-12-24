@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/timeline.css">
         <!-- Titre de la page -->
         <title>Portfolio - Yamis MANFALOTI</title>
         <!-- Description de la page pour les moteurs de recherche -->
@@ -14,119 +15,163 @@
         <meta name="author" content="Yamis MANFALOTI">
     </head>
     <body>
-        <nav class="primary-navigation">
+        <nav class="nav-bar">
+            <img class="collapse-menu" src="https://api.iconify.design/fluent-mdl2:collapse-menu.svg?color=%23f9f3ea"/>
             <ul class="nav-list">
-                <li class="nav-item"><a href="#section-welcome">Accueil</a></li>
-                <li class="nav-item"><a href="#section-project">Mes Projets</a></li>
-                <li class="nav-item"><a href="#section-skills">Mes Compétences</a></li>
-                <li class="nav-item"><a href="#ection-cursus">Mon Parcour</a></li>
-                <li class="nav-item"><a href="#section-contact">Contact</a></li>
+                <li class="nav-item"><a class="active" href="#welcome-section">Accueil</a></li>
+                <li class="nav-item"><a class="" href="#project-section">Mes Projets</a></li>
+                <li class="nav-item"><a class="" href="#skills-section">Mes Compétences</a></li>
+                <li class="nav-item"><a class="" href="#career-section">Mon Parcours</a></li>
+                <li class="nav-item"><a class="" href="#contact-section">Contact</a></li>
+                
             </ul>
         </nav>
-        <main>
-            <header>
 
-            </header>
-            <section id="section-welcome">
-                <div class="text-container">
-                    <h1>Yamis MANFALOTI</h1>
-                    <h3>Etudiant en Informatique</h3>
-                    <p>
-                        Hey, je suis Yamis et je suis actuellement étudiant en Informatique.
-                        Mon intérêt pour le domaine de l'Informatique et ma passion pour la décourverte de nouvelles cultures m'animent au quotidien.
-                        Je suis curieux et toujours avode d'apprendre.
-                    </p>
-                </div>
-                <div class="image-container">
-                    <img src="images/profil.jpg" alt="Image de Profil">
+        <main>
+            <section id="welcome-section">
+                <div class="container">
+                    <div class="left-container text-container">
+                        <h1>Yamis MANFALOTI</h1>
+                        <h3>Etudiant en Informatique</h3>
+                        <p>
+                            Hey, je suis Yamis et je suis actuellement étudiant en Informatique. 
+                            Mon intérêt pour le domaine de l'Informatique et ma passion pour la découverte de nouvelles cultures m'anime au quotidien. 
+                            Je suis curieux et toujours avide d'apprendre.
+                        </p>
+                    </div>
+                    <div class="right-container image-container">
+                        <img src="images/profil.jpg" alt="Image de Profil">
+                    </div>
                 </div>
             </section>
-    
-            <section id="section-project"">
+            
+            <section id="project-section">
                 <h2>Mes Projets</h2>
-                <div id="project-gallery">
-                    <figure>
+                <div id="carousel-container">
+                    <figure class="shown-figure-carousel">
                         <img src="images/projet_Hero_s_Quest.png" alt="Projet RPG Hero's Quest">
-                        <figcaption>Projet Scolaire : Devellopement d'un jeu du style RPG</figcaption>
+                        <figcaption class="hidden-caption-carousel">Projet Scolaire : Développement d'un jeu du style RPG</figcaption>
                     </figure>
-                    <figure>
+                    <figure class="hidden-figure-carousel">
                         <img src="images/projet_Portfolio.png" alt="Projet Portfolio">
-                        <figcaption>Projet Personnel : Le Portfolio Actuel</figcaption>
+                        <figcaption class="hidden-caption-carousel">Projet Personnel : Le Portfolio Actuel</figcaption>
                     </figure>
-                    <figure>
+                    <figure class="hidden-figure-carousel">
                         <img src="images/projet_guess_the_anime.jpg" alt="Projet Guess The Anime">
-                        <figcaption>Projet Scolaire : Devellopement d'une application web</figcaption>
+                        <figcaption class="hidden-caption-carousel">Projet Scolaire : Développement d'une application web</figcaption>
                     </figure>
                 </div>
             </section>
-    
-            <section id="section-skills">
-                <h2>Compétence</h2>
-                <table>
-                    <tr>
-                        <th>Langages de Programmation</th>
-                        <th>Systèmes et Technologies</th>
-                        <th>Compétences Transversales</th>
-                    </tr>
-                    <tr>
-                        <th>    
+
+            <section id="skills-section">
+                <h2>Compétences</h2>
+                <div id="skill-container">
+                    <div>
+                        <h3>Langages de Programmation</h3>
+                        <div class="icons-container">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"/>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" />
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
-                        </th>
-                        <th>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>Systèmes et Technologies</h3>
+                        <div class="icons-container">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" />
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" />
                             <img src="images/icon_network.png" alt="Icon Réseau"/>
                             <img src="images/icon_security.png" alt="Icon Sécurité Informatique"/>
-                        </th>
-                        <th>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Compétences Transversales</h3>
+                        <div class="icons-container">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" />
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/networkx/networkx-original.svg" />
-                        </th>
-                    </tr>
-                </table>
-            </section>
-            
-            <section id="section-cursus">
-                <h2>Mon Parcour</h2>
-                <p>Texte Cursus</p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section id="section-contact">
+            <section id="career-section">
+                <h2>Mon Parcours</h2>
+                <!-- The Timeline -->
+                <div id="career-timeline">
+                    <ul class="timeline">
+                        <!-- Item 1 -->
+                        <li>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="flag">Baccalauréat</span>
+                                    <span class="time-wrapper"><span class="time">2021</span></span>
+                                </div>
+                                <div class="desc">
+                                    • Numérique et Sciences Informatiques
+                                    <br>
+                                    • Mathématique
+                                    <br>
+                                    • Sciences de l'Ingénieur
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Item 2 -->
+                        <li>
+                            <div class="direction-l">
+                                <div class="flag-wrapper">
+                                    <span class="flag">Licence Informatique</span>
+                                    <span class="time-wrapper"><span class="time">2021 - 2024</span></span>
+                                </div>
+                                <div class="desc">
+                                    • Le Mans Université
+                                    <br>
+                                    • Parcours IA
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Item 3 -->
+                        <li>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="flag">Prochaines qualifications</span>
+                                    <span class="time-wrapper"><span class="time">À venir</span></span>
+                                </div>
+                                <div class="desc">• En quête de nouvelles qualifications et opportunités</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="contact-section">
                 <h2>Me contacter</h2>
-                <br>
-                <table>
-                    <tr class="icon">
-                        <td>
-                            <a href="https://www.instagram.com/ymanfaloti/">
+                <div id="socials-container">
+                    <div class="social-container">
+                        <a href="https://www.instagram.com/ymanfaloti/">
                             <img src="images/icon/instagram.png">
-                            </a>
-                        </td>
-                        <td>
-                            <a href="https://www.discordapp.com/users/258671223804788739">
-                                <img src="images/icon/discord.png">
-                            </a>
-                        </td>
-                        <td>
-                            <a href="https://www.linkedin.com/in/yamis-manfaloti-862742230/">
-                                <img src="images/icon/linkedin.png">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://www.instagram.com/ymanfaloti/">@ymanfaloti</a></td>
-                        <td><a href="https://www.discordapp.com/users/258671223804788739">.kreeze<br>KreeZe#5846</a></td>
-                        <td><a href="https://www.linkedin.com/in/yamis-manfaloti-862742230/">Yamis MANFALOTI</a></td>
-                    </tr>
-                </table>
-                <br>
-                <br>
-                <form>
+                        </a>
+                        <a href="https://www.instagram.com/ymanfaloti/">@ymanfaloti</a></td>
+                    </div>
+
+                    <div class="social-container">
+                        <a href="https://www.discordapp.com/users/258671223804788739">
+                            <img src="images/icon/discord.png">
+                        </a>
+                        <a href="https://www.discordapp.com/users/258671223804788739">.kreeze<br>KreeZe#5846</a>
+                    </div>
+                    
+                    <div class="social-container">
+                        <a href="https://www.linkedin.com/in/yamis-manfaloti-862742230/">
+                            <img src="images/icon/linkedin.png">
+                        </a>
+                        <a href="https://www.linkedin.com/in/yamis-manfaloti-862742230/">Yamis MANFALOTI</a>
+                    </div>
+                </div>
+                <form id="form-mail-contact">
                     <label for="name">Nom :</label>
                     <input type="text" id="name" name="name" required>
         
@@ -140,7 +185,7 @@
                 </form>
             </section>
         </main>
-        <br>
+
         <footer>
             <p>&copy; 2023 Mon Portfolio. Tous droits réservés.</p>
         </footer>
