@@ -26,12 +26,12 @@ body {
 
 *, html {
     scroll-behavior: smooth !important;
-    scroll-padding: 2rem;
+    scroll-padding: 3rem;
     box-sizing: border-box;
 }
 
 section {
-    height: 100vh;
+    height: 100dvh;
     display: grid;
     align-items: center;
     padding: 2rem;
@@ -71,6 +71,10 @@ img {
     height: 100%;
     object-fit: cover;
 }
+
+.block {
+    display: block !important;
+}
 /* ================== Navigation Bar ================== */
 .nav-bar {
     z-index: 1000;
@@ -79,6 +83,7 @@ img {
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 3rem;
 
     background-color: var(--color-1);
     line-height: normal;
@@ -98,11 +103,8 @@ img {
     display:block;
 }
 
-.collapse-menu {
+#collapse-menu {
     display: none;
-    width: auto;
-    height: 100%;
-    object-fit: cover;
 }
 
 .nav-bar a {
@@ -148,7 +150,7 @@ img {
 
 #welcome-section .right-container {
     background-color: var(--color-4);
-    height: 100vh;
+    height: 100dvh;
 }
 /* ================== Project Section ================== */
 #project-section {
@@ -266,7 +268,7 @@ img {
 
 #contact-section textarea {
     width: 300px;
-    height: 25vh;
+    height: 25dvh;
 }
 
 #contact-section button {
@@ -315,6 +317,7 @@ footer p {
         text-align: right;
         padding: 1rem;
         height: auto;
+        min-height: 3rem;
     }
 
     .nav-list {
@@ -326,8 +329,11 @@ footer p {
         font-size: 70%;
     }
 
-    .collapse-menu {
+    #collapse-menu {
         display: unset;
+        width: auto;
+        height: 100%;
+        object-fit: cover;
     }
 
     #welcome-section .right-container {
@@ -361,7 +367,7 @@ footer p {
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        justify-content: center; /* Espacement équitable entre les éléments */
+        justify-content: center;
         padding-top: 2rem;
     }
 
