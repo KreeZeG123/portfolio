@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/timeline.css">
         <!-- Titre de la page -->
         <title>Portfolio - Yamis MANFALOTI</title>
@@ -17,61 +17,61 @@
 
     </head>
     <body>
-        <nav class="nav-bar">
-            
-            <img id="collapse-menu" src="https://api.iconify.design/fluent-mdl2:collapse-menu.svg?color=%23f9f3ea"/>
-            <ul class="nav-list">
-                <li class="nav-item"><a class="active" href="#welcome-section">Accueil</a></li>
-                <li class="nav-item"><a class="" href="#project-section">Mes Projets</a></li>
-                <li class="nav-item"><a class="" href="#skills-section">Mes Compétences</a></li>
-                <li class="nav-item"><a class="" href="#career-section">Mon Parcours</a></li>
-                <li class="nav-item"><a class="" href="#contact-section">Contact</a></li>
-                
-            </ul>
-        </nav>
+        <header class="nav-bar | bg-color-1">
+            <nav>
+                <div id="collapse-menu-container">
+                    <img src="https://api.iconify.design/fluent-mdl2:collapse-menu.svg?color=%23f9f3ea"/>
+                </div>
+                <ul class="nav-list | ">
+                    <li class="nav-item"><a class="active" href="#welcome-section">Accueil</a></li>
+                    <li class="nav-item"><a class="" href="#project-section">Mes Projets</a></li>
+                    <li class="nav-item"><a class="" href="#skills-section">Mes Compétences</a></li>
+                    <li class="nav-item"><a class="" href="#career-section">Mon Parcours</a></li>
+                    <li class="nav-item"><a class="" href="#contact-section">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
         <main>
-            <section id="welcome-section">
-                <div class="container">
-                    <div class="left-container">
-                        <div class="text-container">
-                            <h1>Yamis MANFALOTI</h1>
-                            <h3>Etudiant en Informatique</h3>
-                            <p>
-                                Hey, je suis Yamis et je suis actuellement étudiant en Informatique. 
-                                Mon intérêt pour le domaine de l'Informatique et ma passion pour la découverte de nouvelles cultures m'anime au quotidien. 
-                                Je suis curieux et toujours avide d'apprendre.
+            <section id="welcome-section" class="section | bg-color-1">
+                <div class="grid-col-container | grid-hero ">
+                    <div class="text-container">
+                        <h1 class="txt-color-2">Yamis MANFALOTI</h1>
+                        <h3 class="txt-color-3">Etudiant en Informatique</h3>
+                        <p class="txt-color-3">
+                            Hey, je suis Yamis et je suis actuellement étudiant en Informatique. 
+                            Mon intérêt pour le domaine de l'Informatique et ma passion pour la découverte de nouvelles cultures m'anime au quotidien. 
+                            Je suis curieux et toujours avide d'apprendre.
                         </p>
-                        </div>
                     </div>
-                    <div class="right-container image-container">
-                        <img src="images/profil.jpg" alt="Image de Profil">
+                    <div class="img-container">
+                        <img class="hero-banner" src="images/profil.jpg" alt="Image de Profil">
                     </div>
                 </div>
             </section>
             
-            <section id="project-section">
-                <h2>Mes Projets</h2>
-                <div id="carousel-container">
-                    <figure class="shown-figure-carousel">
+            <section id="project-section" class="section bg-color-4">
+                <h2 class="txt-color-2">Mes Projets</h2>
+                <div class="carousel-container">
+                    <figure class="">
                         <img src="images/project/projet_Hero_s_Quest.png" alt="Projet RPG Hero's Quest">
-                        <figcaption class="hidden-caption-carousel">Projet Scolaire : Développement d'un jeu du style RPG</figcaption>
+                        <figcaption class="display-hidden">Projet Scolaire : Développement d'un jeu du style RPG</figcaption>
                     </figure>
-                    <figure class="hidden-figure-carousel">
+                    <figure class="display-hidden">
                         <img src="images/project/projet_Portfolio.png" alt="Projet Portfolio">
-                        <figcaption class="hidden-caption-carousel">Projet Personnel : Le Portfolio Actuel</figcaption>
+                        <figcaption class="display-hidden">Projet Personnel : Le Portfolio Actuel</figcaption>
                     </figure>
-                    <figure class="hidden-figure-carousel">
+                    <figure class="display-hidden">
                         <img src="images/project/projet_guess_the_anime.jpg" alt="Projet Guess The Anime">
-                        <figcaption class="hidden-caption-carousel">Projet Scolaire : Développement d'une application web</figcaption>
+                        <figcaption class="display-hidden">Projet Scolaire : Développement d'une application web</figcaption>
                     </figure>
                 </div>
             </section>
 
-            <section id="skills-section">
-                <h2>Compétences</h2>
-                <div id="skill-container">
-                    <div>
-                        <h3>Langages de Programmation</h3>
+            <section id="skills-section" class="section | bg-color-3">
+                <h2 class="txt-color-2">Compétences</h2>
+                <div class="grid-col-container | grid-skills | v-centered-grid">
+                    <div class="skill-container">
+                        <h3 class="txt-color-1">Langages de Programmation</h3>
                         <div class="icons-container">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"/>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
@@ -82,8 +82,8 @@
                         </div>
                     </div>
 
-                    <div>
-                        <h3>Systèmes et Technologies</h3>
+                    <div class="skill-container">
+                        <h3 class="txt-color-1">Systèmes et Technologies</h3>
                         <div class="icons-container">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" />
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" />
@@ -91,8 +91,9 @@
                             <img src="images/icon/cybersecurity.png" alt="Icon Sécurité Informatique"/>
                         </div>
                     </div>
-                    <div>
-                        <h3>Compétences Transversales</h3>
+
+                    <div class="skill-container">
+                        <h3 class="txt-color-1">Compétences Transversales</h3>
                         <div class="icons-container">
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" />
@@ -102,102 +103,108 @@
                 </div>
             </section>
 
-            <section id="career-section">
-                <h2>Mon Parcours</h2>
+            <section id="career-section" class="section | bg-color-4">
+                <h2 class="txt-color-2">Mon Parcours</h2>
                 <!-- The Timeline -->
-                <div id="career-timeline">
-                    <ul class="timeline">
-                        <!-- Item 1 -->
-                        <li>
-                            <div class="direction-r">
-                                <div class="flag-wrapper">
-                                    <span class="flag">Baccalauréat</span>
-                                    <span class="time-wrapper"><span class="time">2021</span></span>
-                                </div>
-                                <div class="desc">
-                                    • Numérique et Sciences Informatiques
-                                    <br>
-                                    • Mathématique
-                                    <br>
-                                    • Sciences de l'Ingénieur
-                                </div>
-                            </div>
-                        </li>
-                        <!-- Item 2 -->
-                        <li>
-                            <div class="direction-l">
-                                <div class="flag-wrapper">
-                                    <span class="flag">Licence Informatique</span>
-                                    <span class="time-wrapper"><span class="time">2021 - 2024</span></span>
-                                </div>
-                                <div class="desc">
-                                    • Le Mans Université
-                                    <br>
-                                    • Parcours IA
-                                </div>
-                            </div>
-                        </li>
-                        <!-- Item 3 -->
-                        <li>
-                            <div class="direction-r">
-                                <div class="flag-wrapper">
-                                    <span class="flag">Prochaines qualifications</span>
-                                    <span class="time-wrapper"><span class="time">À venir</span></span>
-                                </div>
-                                <div class="desc">• En quête de nouvelles qualifications et opportunités</div>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="grid-col-container | v-centered-grid">
+                    <div class="centered-container">
+                        <div id="career-timeline">
+                            <ul class="timeline">
+                                <!-- Item 1 -->
+                                <li>
+                                    <div class="direction-r">
+                                        <div class="flag-wrapper">
+                                            <span class="flag">Baccalauréat</span>
+                                            <span class="time-wrapper"><span class="time">2021</span></span>
+                                        </div>
+                                        <div class="desc">
+                                            • Numérique et Sciences Informatiques
+                                            <br>
+                                            • Mathématique
+                                            <br>
+                                            • Sciences de l'Ingénieur
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Item 2 -->
+                                <li>
+                                    <div class="direction-l">
+                                        <div class="flag-wrapper">
+                                            <span class="flag">Licence Informatique</span>
+                                            <span class="time-wrapper"><span class="time">2021 - 2024</span></span>
+                                        </div>
+                                        <div class="desc">
+                                            • Le Mans Université
+                                            <br>
+                                            • Parcours IA
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Item 3 -->
+                                <li>
+                                    <div class="direction-r">
+                                        <div class="flag-wrapper">
+                                            <span class="flag">Prochaines qualifications</span>
+                                            <span class="time-wrapper"><span class="time">À venir</span></span>
+                                        </div>
+                                        <div class="desc">• En quête de nouvelles qualifications et opportunités</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-            <section id="contact-section">
-                <h2>Me contacter</h2>
-                <div id="socials-container">
-                    <div class="social-container">
-                        <a href="https://www.instagram.com/ymanfaloti/">
-                            <img src="images/icon/instagram.png">
-                        </a>
-                        <a href="https://www.instagram.com/ymanfaloti/">@ymanfaloti</a>
-                    </div>
+            <section id="contact-section" class="section | bg-color-3">
+                <h2 class="txt-color-2">Me contacter</h2>
+                <div class="contact-container">
+                    <div class="grid-col-container | grid-social">
+                        <div class="social-container">
+                            <a href="https://www.instagram.com/ymanfaloti/">
+                                <img src="images/icon/instagram.png">
+                            </a>
+                            <a class="txt-color-1" href="https://www.instagram.com/ymanfaloti/">@ymanfaloti</a>
+                        </div>
 
-                    <div class="social-container">
-                        <a href="https://www.discordapp.com/users/258671223804788739">
-                            <img src="images/icon/discord.png">
-                        </a>
-                        <a href="https://www.discordapp.com/users/258671223804788739">.kreeze<br>KreeZe#5846</a>
-                    </div>
-                    
-                    <div class="social-container">
-                        <a href="https://www.linkedin.com/in/yamis-manfaloti-862742230/">
-                            <img src="images/icon/linkedin.png">
-                        </a>
-                        <a href="https://www.linkedin.com/in/yamis-manfaloti-862742230/">Yamis MANFALOTI</a>
-                    </div>
+                        <div class="social-container">
+                            <a href="https://www.discordapp.com/users/258671223804788739">
+                                <img src="images/icon/discord.png">
+                            </a>
+                            <a class="txt-color-1" href="https://www.discordapp.com/users/258671223804788739">.kreeze<br>KreeZe#5846</a>
+                        </div>
+                        
+                        <div class="social-container">
+                            <a href="https://www.linkedin.com/in/yamis-manfaloti-862742230/">
+                                <img src="images/icon/linkedin.png">
+                            </a>
+                            <a class="txt-color-1" href="https://www.linkedin.com/in/yamis-manfaloti-862742230/">Yamis MANFALOTI</a>
+                        </div>
 
-                    <div class="social-container">
-                        <a href="https://github.com/KreeZeG123/">
-                            <img src="images/icon/github.png">
-                        </a>
-                        <a href="https://github.com/KreeZeG123/">KreeZeG123</a>
+                        <div class="social-container">
+                            <a href="https://github.com/KreeZeG123/">
+                                <img src="images/icon/github.png">
+                            </a>
+                            <a class="txt-color-1" href="https://github.com/KreeZeG123/">KreeZeG123</a>
+                        </div>
                     </div>
+                    <form class="form-container | bg-color-2">
+                        <label class="txt-color-4" for="name">Nom :</label>
+                        <input class="txt-color-1" type="text" id="name" name="name" required>
+            
+                        <label class="txt-color-4" for="email">Email :</label>
+                        <input class="txt-color-1" type="email" id="email" name="email" required>
+            
+                        <label class="txt-color-4" for="message">Message :</label>
+                        <textarea class="txt-color-1" id="message" name="message" required></textarea>
+            
+                        <button type="button" onclick="alert('Le service de messagerie n\'est pas actif pour le moment. Votre message ne sera pas réellement envoyé')">Envoyer</button>
+                    </form>
                 </div>
-                <form id="form-mail-contact">
-                    <label for="name">Nom :</label>
-                    <input type="text" id="name" name="name" required>
-        
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="email" required>
-        
-                    <label for="message">Message :</label>
-                    <textarea id="message" name="message" required></textarea>
-        
-                    <button type="button" onclick="alert('Le service de messagerie n\'est pas actif pour le moment. Votre message ne sera pas réellement envoyé')">Envoyer</button>
-                </form>
             </section>
         </main>
 
-        <footer>
+        <footer class="bg-color-1 | txt-color-3">
             <p>&copy; 2023 Mon Portfolio. Tous droits réservés.</p>
         </footer>
 

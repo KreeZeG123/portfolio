@@ -23,7 +23,8 @@ function getCurrentSection() {
         var sectionHeight = section.clientHeight;
 
         // Utilisez une marge pour déterminer la visibilité de la section
-        var margin = 4 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+        var margin = 25 * window.innerHeight / 100;
+        console.log(margin)
 
         if (scrollPosition >= sectionTop - margin && scrollPosition < sectionTop + sectionHeight + margin) {
             return section.getAttribute('id');
@@ -41,11 +42,11 @@ function updateNavActiveSection() {
 window.addEventListener('scroll', updateNavActiveSection);
 
 /* ===== Nav Bar Show Menu =====*/
-var menu = document.querySelector('#collapse-menu');
+var menu = document.querySelector('#collapse-menu-container img');
 menu.addEventListener('click', function() {
     var nav_list = document.querySelector('.nav-list');
     
-    nav_list.classList.toggle('block');
+    nav_list.classList.toggle('display-block');
 });
 
 /* ===== Nav Bar Collapse Menue On Click ===== */
@@ -57,9 +58,8 @@ nav_items.forEach( nav_item => {
         var computedDisplay = window.getComputedStyle(menu).display;
 
         if (computedDisplay !== 'none') {
-            console.log("click");
             var nav_list = document.querySelector('.nav-list');
-            nav_list.classList.toggle('block');
+            nav_list.classList.toggle('display-block');
         }
     });
 });
