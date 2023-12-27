@@ -176,14 +176,46 @@ main > section:first-child {
     height: auto;
 }
 /* ================== Project Section ================== */
-.carousel-container img {
+.carousel-slide {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.carousel-container img.caption-hovered {
+    filter: blur(9px);
+}
+
+.carousel-container img.caption-hovered:hover {
+    filter: none;
+}
+
+.carousel-slide  img {
     max-height: 75dvh;
     transition: filter 0.3s ease-in-out;
 }
 
-.carousel-container img:not(.display-hidden):hover {
-    filter: blur(4px);
+.carousel-slide  img:not(.display-hidden):hover {
+    filter: blur(9px);
 }
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.caption-name {
+    font-size: 3rem;
+    line-height: 6rem;
+}
+
+.caption-desc {
+    font-size: 2rem;
+    line-height: 4rem;
+}
+
 /* ================== Skills Section ================== */
 
 .grid-skills {
@@ -413,5 +445,15 @@ main > section:first-child {
     
     .form-container textarea {
         font-size: 1rem; 
+    }
+
+    .caption-name {
+        font-size: 1.5rem;
+        line-height: 0rem;
+    }
+    
+    .caption-desc {
+        font-size: 1rem;
+        line-height: 0rem;
     }
 }
