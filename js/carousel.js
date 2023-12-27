@@ -6,13 +6,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const paragraph = document.querySelector('#project-index');
 
     let currentIndex = 0;
+    let isHovered = false;
 
     // Fonction pour afficher la diapositive suivante
     function showNextSlide() {
-        hideSlide(currentIndex);
-        currentIndex = (currentIndex + 1) % slides.length;
-        showSlide(currentIndex);
-        paragraph.innerText ="Projet "+(currentIndex+1)+"/"+slides.length;
+        if ( !isHovered ) {
+            hideSlide(currentIndex);
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+            paragraph.innerText ="Projet "+(currentIndex+1)+"/"+slides.length;
+        }
     }
 
     // Fonction pour afficher une diapositive spécifique
@@ -37,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         image.addEventListener('click', () => {
             if ( window.innerWidth > 666 ) {
+                isHovered = false;
                 showNextSlide();
                 clearInterval(carouselInterval);
                 startCarousel();
@@ -47,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if ( captions[index].classList.contains('display-hidden')) {
                 captions[index].classList.remove('display-hidden');
             }
+            isHovered = true;
         });
         
 
@@ -54,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if ( captions[index].classList.contains('display-hidden')) {
                 captions[index].classList.remove('display-hidden');
             }
+            isHovered = true;
         });
 
         captions[index].addEventListener('mouseover', () => {
@@ -61,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 captions[index].classList.remove('display-hidden');
             }
             image.classList.add('caption-hovered');
+            isHovered = true;
         });
 
         captions[index].addEventListener('mouseout', () => {
@@ -68,12 +75,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 captions[index].classList.remove('display-hidden');
             }
             image.classList.remove('caption-hovered');
+            isHovered = false;
         });
 
         image.addEventListener('mouseout', () => {
             if ( !captions[index].classList.contains('display-hidden')) {
                 captions[index].classList.add('display-hidden');
                 image.classList.remove('caption-hovered');
+                isHovered = false;
             }
         });
     });
