@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Démarrez le carrousel
     let carouselInterval;
     function startCarousel() {
-        carouselInterval  = setInterval(showNextSlide, 5000); // Changez l'intervalle selon vos préférences (en millisecondes)
+        carouselInterval  = setInterval(showNextSlide, 4000); // Changez l'intervalle selon vos préférences (en millisecondes)
     }
 
     // Affichez la première diapositive et démarrez le carrousel
