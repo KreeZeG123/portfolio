@@ -177,6 +177,7 @@ main > section:first-child {
 }
 /* ================== Project Section ================== */
 .carousel-container img {
+    max-height: 75dvh;
     transition: filter 0.3s ease-in-out;
 }
 
@@ -227,13 +228,11 @@ main > section:first-child {
 .social-container {
     display: flex;
     flex-direction: column;
-    height: 12rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    height: 10rem;
 }
 
 .social-container img {
-    width: 6rem;
+    width: 4rem;
 }
 
 .social-container a {
@@ -245,8 +244,7 @@ main > section:first-child {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    height: 25dvw;
 
     border-left: solid 1rem var(--color-2);
     border-right: solid 1rem var(--color-2);
@@ -402,19 +400,18 @@ main > section:first-child {
 
     .form-container {
         width: 90dvw;
+        height: auto;
     }
 
     .form-container label {
-        font-size: 1.3rem; 
+        font-size: 1rem; 
     }
     
     .form-container input {
-        font-size: 1.3rem; 
-        font-size: 1.3rem; 
+        font-size: 1rem; 
     }
     
     .form-container textarea {
-        font-size: 1.3rem; 
-        font-size: 1.3rem; 
+        font-size: 1rem; 
     }
 }
