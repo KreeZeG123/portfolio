@@ -1,29 +1,44 @@
-# My Portfolio
+# Portfolio de Yamis MANFALOTI
 
-## Introduction
+Bienvenue sur mon portfolio en ligne ! Découvrez mon parcours, mes compétences, mes projets, et les moyens de me contacter à travers une interface claire et dynamique.
 
-Welcome to my personal portfolio repository! This project serves as a showcase of my skills, experiences, and projects. Whether you're a potential employer, collaborator, or just curious about what I do, you'll find relevant information here.
+## Structure du Portfolio
 
-## Table of Contents
+### 1. **Accueil**
+- Une introduction rapide avec mon nom, ma présentation succincte, et mes réseaux sociaux professionnels.
 
-1. [About Me](https://kreezeg123.github.io/portfolio/#welcome-section)
-2. [Projects](https://kreezeg123.github.io/portfolio/#project-section)
-3. [Skills](https://kreezeg123.github.io/portfolio/#skills-section)
-4. [Career](https://kreezeg123.github.io/portfolio/#career-section)
-5. [Contact](https://kreezeg123.github.io/portfolio/#contact-section)
+### 2. **À propos**
+- Une section dédiée à me décrire en tant qu’étudiant en informatique.
+- Informations générales : ville, niveau d’études, âge, contact.
+- Une touche personnelle sur mes passions et centres d'intérêt.
 
-## About Me
+### 3. **Compétences**
+- Un aperçu de mes compétences techniques organisées en niveaux : 
+  - **Confirmé** : Java, HTML/CSS, PostgreSQL.
+  - **Intermédiaire** : Python, Angular.
+  - **Novice** : Docker.
+- Présentation visuelle sous forme de barres de progression.
 
-In this section, you'll discover more about who I am, my background, and what drives me. I'll share my interest in IT, my passion for discovering new cultures and my commitment to delivering high-quality work. Feel free to explore and get to know me better!
+### 4. **Parcours**
+- Une chronologie de ma formation et de mes expériences :
+  - **Formations** : Master en Informatique (Angers), Licence en Informatique (Le Mans), Baccalauréat NSI.
+  - **Activités extra-professionnelles** : 9+ ans de tennis de table, dont 7 en compétition, avec des engagements bénévoles.
 
-## Projects
+### 5. **Projets**
+- Une galerie interactive regroupant mes projets universitaires et personnels :
+  - **TerraQuest** : Application ludique pour Terra Botanica.
+  - **Système Expert** : Outil d’inférence avec chaînage avant/arrière.
+  - **SlitherLink** : Jeu de puzzle avec aide pédagogique.
+  - **AnimeExplorer** : Application web pour découvrir des animés.
+  - **Hero’s Quest** : Jeu vidéo développé en C.
 
-Explore the various projects I've worked on, ranging from personal endeavors to professional collaborations. Each project comes with a brief description. Dive into the details and see firsthand the results of my dedication and creativity.
+### 6. **Contact**
+- Mes coordonnées détaillées :
+  - Email : [manfaloti.yamis@gmail.com](mailto:manfaloti.yamis@gmail.com)
+  - Localisation : Angers, France.
+- Liens vers mes profils professionnels et réseaux sociaux (LinkedIn, Discord, GitHub, Instagram).
 
-## Skills
 
-Discover the skills that define me as a professional. From programming languages and frameworks to design tools and methodologies, this section provides an overview of the areas where I excel. Whether you're looking for a front-end developer, a data scientist, or a versatile team member, you'll find that my skill set aligns with your needs.
+---
 
-## Contact
-
-If you're interested in connecting with me, whether for job opportunities, collaborations, or just a friendly conversation, this section provides the necessary contact information. Reach out via e-mail or visit my website to start a meaningful conversation.
+Merci pour votre visite, n’hésitez pas à me contacter pour toute opportunité ou collaboration !
