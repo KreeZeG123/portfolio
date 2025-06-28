@@ -167,7 +167,7 @@
                     <li>
                       <i class="bi bi-chevron-right"></i>
                       <strong>Status:</strong>
-                      <span>En recherche de stage</span>
+                      <span>En recherche d'alternance (M2)</span>
                     </li>
                   </ul>
                 </div>
@@ -229,7 +229,12 @@
 
               <div class="progress">
                 <span class="skill"
-                  ><span>HTML &amp; CSS &amp; JS </span>
+                  ><a
+                    href="/assets/img/portfolio/Learn_React_Certificate.pdf"
+                    title="Certificat de completion du cours"
+                  >
+                    React
+                  </a>
                   <i class="val">Confirmé</i></span
                 >
                 <div class="progress-bar-wrap">
@@ -246,7 +251,7 @@
 
               <div class="progress">
                 <span class="skill"
-                  ><span>PostgreSQL</span> <i class="val">Confirmé</i></span
+                  ><span>SQL</span> <i class="val">Confirmé</i></span
                 >
                 <div class="progress-bar-wrap">
                   <div
@@ -262,13 +267,7 @@
 
               <div class="progress">
                 <span class="skill"
-                  ><a
-                    href="/assets/img/portfolio/Learn_React_Certificate.pdf"
-                    title="Certificat de completion du cours"
-                  >
-                    React
-                  </a>
-                  <i class="val">Intermédiaire</i></span
+                  ><span>Python</span> <i class="val">Intermédiaire</i></span
                 >
                 <div class="progress-bar-wrap">
                   <div
@@ -286,7 +285,8 @@
             <div class="col-lg-6">
               <div class="progress">
                 <span class="skill"
-                  ><span>Python</span> <i class="val">Intermédiaire</i></span
+                  ><span>PHP Symfony</span>
+                  <i class="val">Intermédiaire</i></span
                 >
                 <div class="progress-bar-wrap">
                   <div
@@ -410,29 +410,36 @@
                 </ul>
               </div>
               <!-- Edn Resume Item -->
-
-              <div class="resume-item">
-                <h4>Baccalauréat</h4>
-                <h5>septembre 2018 - juillet 2021</h5>
-                <p><em>Lycée Touchard Washington, Le Mans, France</em></p>
-                <ul>
-                  <li>Numérique et Sciences Informatiques</li>
-                  <li>Mathématiques</li>
-                  <li>Sciences de l'Ingénieur ( Spécialité de Première )</li>
-                </ul>
-              </div>
-              <!-- Edn Resume Item -->
             </div>
 
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="resume-title">Expériences professionnelles</h3>
+              <div class="resume-item">
+                <h4>Stage : Conception d’un outil scientifique</h4>
+                <h5>avril 2025 - juin 2025</h5>
+                <p><em>LERIA, Angers, France</em></p>
+                <ul>
+                  <li>
+                    Prédiction de spectres RMN à partir de structures
+                    moléculaires
+                  </li>
+                  <li>Frontend React, backend Python (Flask), API REST</li>
+                  <li>
+                    benchmark, conception, UX, développement fullstack,
+                    documentation
+                  </li>
+                </ul>
+              </div>
+              <!-- Edn Resume Item -->
+
               <h3 class="resume-title">Activités extra-professionnelles</h3>
               <div class="resume-item">
                 <h4>Sportif</h4>
                 <h5>juillet 2024 - aujourd'hui</h5>
                 <p><em>Les Loups d'Angers, Angers, France</em></p>
                 <ul>
-                  <li>Plus de 9 ans de pratique du tennis de table</li>
-                  <li>Plus de 7 années dédiées à la compétition</li>
+                  <li>Plus de 10 ans de pratique du tennis de table</li>
+                  <li>Plus de 8 années dédiées à la compétition</li>
                 </ul>
               </div>
               <!-- Edn Resume Item -->
@@ -473,9 +480,10 @@
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter="*" class="filter-active">Tous</li>
               <li data-filter=".filter-app">Application</li>
               <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-ia">Intelligence Artificielle</li>
               <li data-filter=".filter-conception">Conception</li>
             </ul>
             <!-- End Portfolio Filters -->
@@ -486,25 +494,127 @@
               data-aos-delay="200"
             >
               <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web"
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app filter-web filter-ia filter-conception"
               >
                 <img
-                  src="assets/img/portfolio/en-cours.png"
+                  src="assets/img/portfolio/predictionRMN.png"
                   class="img-fluid"
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>TerraQuest</h4>
+                  <h4>PredictionRMN</h4>
                   <p>
-                    Projet personnel en cours, qui prolonge le projet
-                    <a href="terraQuest-conception-details.html">TerraQuest</a>
-                    réalisé en M1, où seule la conception UI/UX avait été
-                    produite. Ce projet vise à l'apprentissage d'une stack web
-                    moderne, avec le développement d'une application utilisant
-                    ReactJS, Symfony, PostgreSQL et Docker."
+                    Stage de M1 au LERIA, visant à concevoir et développer une
+                    application destinée aux chimistes. Cette application permet
+                    de dessiner une molécule, de prédire son spectre RMN et
+                    d’explorer les correspondances atomes-pics.
                   </p>
                   <a
-                    href="assets/img/portfolio/en-cours.png"
+                    href="assets/img/portfolio/predictionRMN.png"
+                    title="PredictionRMN"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="predictionRMN-details.html"
+                    title="Plus de détails"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app filter-web"
+              >
+                <img
+                  src="assets/img/portfolio/snakeOnline.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>SnakeOnline</h4>
+                  <p>
+                    Projet réalisé dans le cadre de mon Master 1, visant à
+                    concevoir un jeu multijoueur en ligne inspiré de Snake. Il
+                    combine une architecture client-serveur en Java via des
+                    sockets pour la partie jeu en temps réel, et un serveur web
+                    Java EE pour la gestion des comptes, des scores et des
+                    cosmétiques.
+                  </p>
+                  <a
+                    href="assets/img/portfolio/snakeOnline.png"
+                    title="SnakeOnline"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="snakeOnline-details.html"
+                    title="Plus de détails"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app filter-ia"
+              >
+                <img
+                  src="assets/img/portfolio/snake_machine_learning.jpeg"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>Snake Machine Learning</h4>
+                  <p>
+                    Projet réalisé dans le cadre de mon Master 1, portant sur
+                    l’apprentissage par renforcement appliqué au jeu Snake.
+                    L’objectif était d’entraîner une IA à jouer en solo ou en
+                    duel en utilisant des algorithmes de type Q-learning, avec
+                    une évaluation sur plusieurs centaines de parties.
+                  </p>
+                  <a
+                    href="assets/img/portfolio/snake_machine_learning.jpeg"
+                    title="Snake Machine Learning"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox preview-link"
+                    ><i class="bi bi-zoom-in"></i
+                  ></a>
+                  <a
+                    href="snake-machine-learning-details.html"
+                    title="Plus de détails"
+                    class="details-link"
+                    ><i class="bi bi-link-45deg"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web"
+              >
+                <img
+                  src="assets/img/portfolio/terraQuest.png"
+                  class="img-fluid"
+                  alt=""
+                />
+                <div class="portfolio-info">
+                  <h4>TerraQuest - Développement</h4>
+                  <p>
+                    Projet personnel qui prolonge le projet
+                    <a href="terraQuest-conception-details.html">TerraQuest</a>
+                    réalisé en M1, où seule la conception UI/UX avait été
+                    produite. Ce projet vise à l'apprentissage d'un framework
+                    web php moderne, avec le développement d'une application web
+                    utilisant Symfony et MySQL.
+                  </p>
+                  <a
+                    href="assets/img/portfolio/terraQuest.png"
                     title="TerraQuest (Dev Web)"
                     data-gallery="portfolio-gallery-app"
                     class="glightbox preview-link"
@@ -524,20 +634,21 @@
                 class="col-lg-4 col-md-6 portfolio-item isotope-item filter-conception"
               >
                 <img
-                  src="assets/img/portfolio/terraQuest.png"
+                  src="assets/img/portfolio/terraQuest_conception.png"
                   class="img-fluid"
                   alt=""
                 />
                 <div class="portfolio-info">
-                  <h4>TerraQuest</h4>
+                  <h4>TerraQuest - Conception</h4>
                   <p>
-                    Projet fictif réalisé dans le cadre de mon Master 1, visant
-                    à répondre à un appel d'offre de Terra Botanica pour
-                    concevoir une chasse au trésor numérique, alliant ludisme et
-                    pédagogie, autour de la faune et la flore du parc.
+                    Projet réalisé dans le cadre de mon Master 1, visant à
+                    répondre à un appel d'offre fictif venant de Terra Botanica
+                    pour concevoir une chasse au trésor numérique, alliant
+                    ludisme et pédagogie, autour de la faune et la flore du
+                    parc.
                   </p>
                   <a
-                    href="assets/img/portfolio/terraQuest.png"
+                    href="assets/img/portfolio/terraQuest_conception.png"
                     title="TerraQuest (Conception)"
                     data-gallery="portfolio-gallery-app"
                     class="glightbox preview-link"
@@ -554,7 +665,7 @@
               <!-- End Portfolio Item -->
 
               <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app filter-ia"
               >
                 <img
                   src="assets/img/portfolio/systemeExpert.png"
@@ -589,7 +700,7 @@
               <!-- End Portfolio Item -->
 
               <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app filter-conception"
               >
                 <img
                   src="assets/img/portfolio/slitherLink.png"

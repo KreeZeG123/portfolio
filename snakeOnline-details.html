@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>SlitherLink - Portfolio Yamis MANFALOTI</title>
+    <title>SnakeOnline - Portfolio Yamis MANFALOTI</title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
@@ -99,10 +99,10 @@
           <nav class="breadcrumbs">
             <ol>
               <li><a href="index.html">Accueil</a></li>
-              <li class="current">SlitherLink</li>
+              <li class="current">SnakeOnline</li>
             </ol>
           </nav>
-          <h1>SlitherLink</h1>
+          <h1>SnakeOnline</h1>
         </div>
       </div>
       <!-- End Page Title -->
@@ -132,31 +132,44 @@
             </script>
             <div class="swiper-wrapper align-items-center">
               <div class="swiper-slide">
-                <a
-                  href="assets/doc/slitherLink/cahier_des_charges_Slitherlink_V2.pdf"
-                  target="_blank"
-                >
-                  <img
-                    src="assets/img/projects-details/slitherlink_Cahier_des_charges_V2.jpg"
-                    alt=""
-                    height="668"
-                    style="object-fit: contain"
-                  />
-                </a>
+                <img
+                  src="assets/img/projects-details/snakeOnline/home_page.png"
+                  alt=""
+                  height="668"
+                  style="object-fit: contain"
+                />
               </div>
-
               <div class="swiper-slide">
-                <a
-                  href="assets/doc/slitherLink/diapo_Slitherlink.pdf"
-                  target="_blank"
-                >
-                  <img
-                    src="assets/img/projects-details/slitherlink_diapo.jpg"
-                    alt=""
-                    height="668"
-                    style="object-fit: contain"
-                  />
-                </a>
+                <img
+                  src="assets/img/projects-details/snakeOnline/game.png"
+                  alt=""
+                  height="668"
+                  style="object-fit: contain"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/projects-details/snakeOnline/shop.png"
+                  alt=""
+                  height="668"
+                  style="object-fit: contain"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/projects-details/snakeOnline/profile.png"
+                  alt=""
+                  height="668"
+                  style="object-fit: contain"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/projects-details/snakeOnline/serveur_lists.png"
+                  alt=""
+                  height="668"
+                  style="object-fit: contain"
+                />
               </div>
             </div>
             <div class="swiper-button-prev"></div>
@@ -167,64 +180,54 @@
           <div class="row justify-content-between gy-4 mt-4">
             <div class="col-lg-8" data-aos="fade-up">
               <div class="portfolio-description">
-                <h2>
-                  Jeu de Puzzle Slitherlink avec Système d'Aide à
-                  l'Apprentissage - Projet Génie Logiciel
-                </h2>
+                <h2>Snake Online : Jeu Multijoueur en Java EE</h2>
                 <p>
-                  Ce projet a été réalisé dans le cadre du module de Génie
-                  Logiciel à l'Université du Mans. L'objectif principal était de
-                  développer un jeu de puzzle basé sur le principe du
-                  Slitherlink, où les utilisateurs doivent relier des points
-                  pour former une boucle continue tout en respectant des indices
-                  numériques dans la grille.
+                  Snake Online est un jeu multijoueur combinant une application
+                  desktop et un serveur web. Le joueur incarne un serpent dans
+                  une arène en ligne, où le but est de manger un maximum de
+                  pommes tout en évitant les obstacles et adversaires.
                 </p>
-                <p>
-                  En complément du jeu, nous avons intégré un système d'aide à
-                  l'apprentissage. Ce système analyse la grille en temps réel et
-                  propose des techniques adaptées pour aider les utilisateurs à
-                  progresser dans leur résolution. Les aides sont contextuelles
-                  et basées sur la configuration actuelle du puzzle, offrant
-                  ainsi une expérience de jeu enrichissante et interactive.
-                </p>
-                <p>
-                  Le projet a été réalisé depuis le début, à partir du cahier
-                  des charges, et a impliqué des réunions régulières avec les
-                  clients pour recueillir leurs retours et ajuster le
-                  développement. Nous avons travaillé en équipe pour suivre
-                  toutes les étapes de la conception logicielle, de l'analyse
-                  des besoins à la modélisation, en passant par le développement
-                  en Java et la documentation.
-                </p>
-                <p>
-                  Le projet a été développé en Java avec une approche orientée
-                  objet, en utilisant UML pour la modélisation. Il m'a permis de
-                  renforcer mes compétences en développement Java, en travail
-                  d'équipe, et en gestion de projet logiciel, tout en créant un
-                  outil qui combine amusement et apprentissage.
-                </p>
-                <p>
-                  Pour ce projet, nous avons produit une
-                  <b>application fonctionnelle</b>, un rapport détaillé et une
-                  présentation mettant en avant les concepts clés de notre
-                  solution. Vous pouvez découvrir ces éléments au travers du
-                  caroussel ci-dessus ou via les liens ci-dessous.
-                </p>
-                <p>Cliquez sur les liens ci-dessous pour accéder au :</p>
+                <p>L'architecture est composée de plusieurs éléments :</p>
                 <ul>
                   <li>
-                    <a
-                      href="assets/doc/slitherLink/cahier_des_charges_Slitherlink_V2.pdf"
-                      target="_blank"
-                      >Cahier des charges</a
-                    >
+                    <strong>Serveur Java Socket central :</strong> Ce serveur
+                    gère la liste des parties en cours et joue le rôle
+                    d’intermédiaire entre l’application desktop et l’API web.
+                    Pour chaque nouvelle partie, il lance un serveur dédié
+                    (sous-serveur) qui gère les interactions en temps réel pour
+                    cette partie spécifique.
                   </li>
                   <li>
-                    <a
-                      href="assets/doc/slitherLink/diapo_Slitherlink.pdf"
-                      target="_blank"
-                      >Présentation</a
-                    >
+                    <strong>Client Desktop :</strong> L’application desktop
+                    communique à la fois avec le serveur central pour consulter
+                    et rejoindre les parties, et avec les serveurs dédiés aux
+                    parties pour le gameplay en temps réel.
+                  </li>
+                  <li>
+                    <strong>Serveur Web (Java EE) :</strong> Il gère
+                    l’authentification des utilisateurs, la gestion des profils,
+                    la boutique de skins, et les classements. Il expose une API
+                    REST utilisée par le serveur central pour synchroniser les
+                    données utilisateur et de jeu.
+                  </li>
+                </ul>
+
+                <h3>Fonctionnalités principales</h3>
+                <ul>
+                  <li>
+                    Gestion sécurisée des comptes et profils utilisateurs.
+                  </li>
+                  <li>
+                    Liste et création de parties multijoueur en temps réel via
+                    le serveur central et ses sous-serveurs.
+                  </li>
+                  <li>
+                    Gameplay dynamique et compétitif avec échanges en temps
+                    réel.
+                  </li>
+                  <li>
+                    Boutique d’objets cosmétiques pour personnaliser son
+                    serpent.
                   </li>
                 </ul>
               </div>
@@ -234,22 +237,21 @@
               <div class="portfolio-info">
                 <h3>Informations sur le projet</h3>
                 <ul>
-                  <li><strong>Catégorie</strong>Application</li>
-                  <li><strong>Contexte</strong>Module Génie Logiciel 2 L3</li>
+                  <li><strong>Catégorie</strong> Application, Web</li>
                   <li>
-                    <strong>Date du projet</strong>8 Janvier 2024 - 16 Avril
-                    2024.
+                    <strong>Date du projet</strong> Mars 2025 - Avril 2025
                   </li>
                   <li>
-                    <strong>GitHub URL</strong>
-                    <a href="https://github.com/KreeZeG123/SlitherLinkGr6"
-                      >github.com/KreeZeG123/SlitherLinkGr6</a
+                    <strong>Auteurs</strong> Yamis MANFALOTI, Nathan RACCOUARD
+                  </li>
+                  <li><strong>Technologies</strong>Java, Java EE, MySQL</li>
+                  <li>
+                    <strong>Projet GitHub</strong>
+                    <a
+                      href="https://github.com/KreeZeG123/SnakeOnline"
+                      target="_blank"
+                      >Lien GitHub</a
                     >
-                  </li>
-                  <li>
-                    <strong>Auteur</strong>Yamis MANFALOTI, Nathan RACCOUARD,
-                    Yusuf ULAS, Emmanuel NTAME, Tom MARSURA, William SARDON
-                    ARRAZ, Matéo GALLAIS, Oussama BOUDALLAA
                   </li>
                 </ul>
               </div>
